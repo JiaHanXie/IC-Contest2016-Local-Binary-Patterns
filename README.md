@@ -3,4 +3,4 @@
 ![image](toparchitecture.png)  
 #FSM    
 ![image](FSM.png)    
-B_ICC2016_preliminary_grad_cell-based.pdf  
+<image src="B_ICC2016_preliminary_grad_cell-based.pdf "/>
