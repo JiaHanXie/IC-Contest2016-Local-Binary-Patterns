@@ -1,6 +1,6 @@
 # IC-Contest2016-Local-Binary-Patterns
 IC Contest2016-Local Binary Patterns
 #Top Architecture    
-![image](toparchitecture.png)
+![image](toparchitecture.png)  
 #FSM    
-![image](FSM.png)
+![image](FSM.png)  
