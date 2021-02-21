@@ -29,7 +29,7 @@ output	wire				finish;
 		.reset(reset),
 		.clk(clk),
 		.Data(gray_data),//8
-		.En(EN4Reg_),//9
+		.En(En4Reg),//9
 		.Reg0(Reg0),//8
 		.Reg1(Reg1),//8
 		.Reg2(Reg2),//8
@@ -50,14 +50,7 @@ output	wire				finish;
 		.Reg6(Reg6),//8
 		.Reg7(Reg7),//8
 		.Reg8(Reg8),//8
-		.LBP(Lbp));//8
-
-	Output_Buffer Output_Buffer(
-		.reset(reset),
-		.clk(clk),
-		.en(en4Out),
-		.Data_in(Lbp),//8
-		.Data_out(lbp_data));//8
+		.LBP(/*Lbp*/lbp_data));//8
 
 	Control_Unit CTL(
 		.reset(reset),
@@ -70,16 +63,8 @@ output	wire				finish;
 		.finish(finish),//1  output
 		.En4Reg(En4Reg),//9  output
 		.en4Out(en4Out));//1  output
-
- 	Buffer4En Buffer4En(
- 		.reset(reset),
- 		.clk(clk),
- 		.datain(En4Reg),//9
- 		.dataout(EN4Reg_));//9
 //====================================================================
 endmodule
 `include "Register.v"
 `include "PE.v"
-`include "Output_Buffer.v"
 `include "Control_Unit.v"
-`include "Buffer4En.v"
